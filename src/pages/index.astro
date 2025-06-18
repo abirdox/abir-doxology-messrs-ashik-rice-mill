@@ -1,0 +1,255 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="মেসার্স আশিক রাইস মিল - প্রতিটি দানায় বিশুদ্ধতা">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://www.health.com/thmb/a8GxwWgmB5KpQW8SfW6VA7UFwaI=/722x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1734160670-0157c2daf8e841d6a783b38aedc51aa8.jpg" alt="Rice field" class="hero-image">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">প্রতিটি দানায় বিশুদ্ধতা</h1>
+        <p class="hero-subtitle">খুচরা, পাইকারি, কাঁচা বা তাজা চাল</p>
+        <p class="hero-description">ঐতিহ্যবাহী হাতে ছাঁটা চালের জন্য আমাদের বিশ্বাস করুন। আমরা সর্বোচ্চ মানের চাল, ধান সরবরাহ এবং ভাড়া সেবা প্রদান করে থাকি।</p>
+        <div class="hero-buttons">
+          <a href="/products" class="btn">পণ্য দেখুন</a>
+          <a href="/contact" class="btn btn-secondary">যোগাযোগ করুন</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about-section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2 class="section-title">আমাদের সম্পর্কে</h2>
+          <p>মেসার্স আশিক রাইস মিল একটি ঐতিহ্যবাহী চাল কল যেখানে আমরা সম্পূর্ণ হাতে চাল ছাঁটার কাজ করে থাকি। আমাদের মূল লক্ষ্য হলো গ্রাহকদের কাছে সর্বোচ্চ মানের, বিশুদ্ধ এবং পুষ্টিকর চাল পৌঁছে দেওয়া।</p>
+          <p>বছরের পর বছর ধরে আমরা স্থানীয় কৃষকদের সাথে কাজ করে এসেছি এবং তাদের উৎপাদিত ধান থেকে সর্বোত্তম চাল তৈরি করি। আমাদের অভিজ্ঞ কর্মীরা ঐতিহ্যবাহী পদ্ধতি অনুসরণ করে চাল প্রক্রিয়াজাত করেন।</p>
+        </div>
+        <div class="about-image">
+          <img src="https://www.health.com/thmb/a8GxwWgmB5KpQW8SfW6VA7UFwaI=/722x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1734160670-0157c2daf8e841d6a783b38aedc51aa8.jpg" alt="Traditional rice processing">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services-section">
+    <div class="container">
+      <h2 class="section-title">আমাদের সেবাসমূহ</h2>
+      <div class="services-grid">
+        <div class="service-card card">
+          <div class="service-icon">🌾</div>
+          <h3>হাতে ছাঁটা চাল</h3>
+          <p>সম্পূর্ণ হাতে ছাঁটা, কোনো যন্ত্রের ব্যবহার নেই। সর্বোচ্চ পুষ্টিগুণ এবং স্বাদ বজায় রাখা হয়।</p>
+        </div>
+        
+        <div class="service-card card">
+          <div class="service-icon">🏪</div>
+          <h3>খুচরা ও পাইকারি</h3>
+          <p>ছোট পরিমাণ থেকে শুরু করে বড় অর্ডার পর্যন্ত সব ধরনের চাহিদা পূরণ করি।</p>
+        </div>
+        
+        <div class="service-card card">
+          <div class="service-icon">🌱</div>
+          <h3>ধান সরবরাহ</h3>
+          <p>অন্যান্য চাল কল এবং ব্যক্তিগত ক্রেতাদের জন্য উন্নত মানের ধান সরবরাহ করি।</p>
+        </div>
+        
+        <div class="service-card card">
+          <div class="service-icon">🏭</div>
+          <h3>ভাড়া সেবা</h3>
+          <p>চাল কলের সুবিধা এবং ধান শুকানোর মাঠ ভাড়া দেওয়া হয়।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>আজই আমাদের সাথে যোগাযোগ করুন</h2>
+        <p>সর্বোচ্চ মানের চাল এবং সেবার জন্য আমরা সর্বদা প্রস্তুত</p>
+        <div class="cta-buttons">
+          <a href="/contact" class="btn">যোগাযোগ করুন</a>
+          <a href="/products" class="btn btn-secondary">পণ্য দেখুন</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<style>
+  /* Add space for fixed header */
+  body {
+    padding-top: 80px;
+  }
+
+  .hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(22, 163, 74, 0.8), rgba(34, 197, 94, 0.6));
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #FCD34D;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .about-section {
+    background: #F9FAFB;
+  }
+
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .service-card {
+    text-align: center;
+  }
+
+  .service-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-card h3 {
+    color: #16A34A;
+    margin-bottom: 1rem;
+  }
+
+  .cta-section {
+    background: linear-gradient(135deg, #16A34A, #22C55E);
+    color: white;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+    }
+
+    .about-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .hero-buttons,
+    .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cta-content h2 {
+      font-size: 2rem;
+    }
+  }
+</style>

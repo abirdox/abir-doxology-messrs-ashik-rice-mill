@@ -1,0 +1,427 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="প্রশ্ন ও উত্তর - মেসার্স আশিক রাইস মিল">
+  <Header />
+  
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>প্রশ্ন ও উত্তর</h1>
+        <p>আমাদের সেবা সম্পর্কে সাধারণ প্রশ্নের উত্তর</p>
+      </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="section">
+      <div class="container">
+        <div class="faq-categories">
+          <button class="category-btn active" data-category="all">সব প্রশ্ন</button>
+          <button class="category-btn" data-category="products">পণ্য সম্পর্কে</button>
+          <button class="category-btn" data-category="ordering">অর্ডার প্রক্রিয়া</button>
+          <button class="category-btn" data-category="rental">ভাড়া সেবা</button>
+          <button class="category-btn" data-category="pricing">দাম ও পেমেন্ট</button>
+          <button class="category-btn" data-category="delivery">ডেলিভারি</button>
+        </div>
+
+        <div class="faq-container">
+          <!-- Products FAQ -->
+          <div class="faq-item" data-category="products" id="small-quantity">
+            <div class="faq-question">
+              <h3>ছোট পরিমাণে চাল কিনতে পারি কি?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>হ্যাঁ, আমরা খুচরা বিক্রয় করি। আপনি ১ কেজি থেকে শুরু করে যেকোনো পরিমাণে চাল কিনতে পারেন। আমাদের কাছে ছোট প্যাকেট থেকে শুরু করে বড় বস্তা পর্যন্ত সব ধরনের প্যাকেজিং উপলব্ধ।</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="products" id="raw-rice">
+            <div class="faq-question">
+              <h3>কাঁচা চাল এবং তাজা চালের মধ্যে পার্থক্য কী?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>কাঁচা চাল হলো ঐতিহ্যবাহী পদ্ধতিতে প্রক্রিয়াজাত চাল যা রান্নায় বেশি সময় নেয় কিন্তু অধিক পুষ্টিকর। তাজা চাল হলো সদ্য প্রক্রিয়াজাত চাল যা দ্রুত রান্না হয় এবং নরম থাকে। দুটোই সম্পূর্ণ হাতে ছাঁটা।</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="products">
+            <div class="faq-question">
+              <h3>খুদ চাল এবং তুষের কী ব্যবহার?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>খুদ চাল মূলত পশুখাদ্য হিসেবে ব্যবহৃত হয় এবং কিছু বিশেষ রান্নায়ও ব্যবহার করা যায়। তুষ পশুখাদ্য হিসেবে খুবই পুষ্টিকর এবং সাশ্রয়ী। এগুলো সম্পূর্ণ প্রাকৃতিক এবং কোনো রাসায়নিক মেশানো হয় না।</p>
+            </div>
+          </div>
+
+          <!-- Ordering FAQ -->
+          <div class="faq-item" data-category="ordering">
+            <div class="faq-question">
+              <h3>কিভাবে অর্ডার দিতে হয়?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>আপনি ফোন, হোয়াটসঅ্যাপ, বা সরাসরি আমাদের কারখানায় এসে অর্ডার দিতে পারেন। অর্ডারের সময় পণ্যের ধরন, পরিমাণ এবং ডেলিভারির ঠিকানা জানাতে হবে। আমরা অর্ডার নিশ্চিত করার পর দাম এবং ডেলিভারির সময় জানিয়ে দেব।</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="ordering">
+            <div class="faq-question">
+              <h3>অর্ডারের জন্য কত আগে থেকে জানাতে হয়?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>ছোট অর্ডারের জন্য সাধারণত ২৪ ঘন্টা আগে জানালেই চলে। বড় অর্ডার (১০ মণের বেশি) এর জন্য ৩-৫ দিন আগে জানানো ভালো। বিশেষ ধরনের চালের জন্য একটু বেশি সময় লাগতে পারে।</p>
+            </div>
+          </div>
+
+          <!-- Rental FAQ -->
+          <div class="faq-item" data-category="rental" id="rental">
+            <div class="faq-question">
+              <h3>ফ্যাক্টরি ভাড়া নেওয়ার শর্ত কী?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>ফ্যাক্টরি ভাড়ার জন্য লিখিত চুক্তি, অগ্রিম পেমেন্ট এবং সিকিউরিটি ডিপোজিট প্রয়োজন। ভাড়াটেকে যন্ত্রপাতির যত্ন নিতে হবে এবং পরিচ্ছন্নতা বজায় রাখতে হবে। ক্ষতি হলে মেরামতের খরচ ভাড়াটে বহন করবেন।</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="rental">
+            <div class="faq-question">
+              <h3>মাঠ ভাড়ার দাম কত?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>মাঠ ভাড়ার দাম এলাকার আকার এবং সময়কালের উপর নির্ভর করে। দৈনিক, সাপ্তাহিক বা মাসিক ভিত্তিতে ভাড়া দেওয়া হয়। বর্তমান দাম জানতে সরাসরি যোগাযোগ করুন। নিরাপত্তা রক্ষী এবং পানির ব্যবস্থা অন্তর্ভুক্ত।</p>
+            </div>
+          </div>
+
+          <!-- Pricing FAQ -->
+          <div class="faq-item" data-category="pricing" id="wholesale">
+            <div class="faq-question">
+              <h3>পাইকারি এবং খুচরা দামের পার্থক্য কত?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>৫ মণের বেশি কিনলে পাইকারি দাম পাবেন। পাইকারি দাম খুচরা দামের চেয়ে ৫-১০% কম হয়। পরিমাণ বেশি হলে আরও ছাড় পেতে পারেন। বর্তমান বাজার দর অনুযায়ী দাম নির্ধারিত হয়।</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="pricing">
+            <div class="faq-question">
+              <h3>পেমেন্ট কিভাবে করতে হয়?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>আমরা নগদ, বিকাশ, নগদ এবং ব্যাংক ট্রান্সফার গ্রহণ করি। বড় অর্ডারের জন্য অগ্রিম পেমেন্ট প্রয়োজন। ডেলিভারির সময় বাকি টাকা পরিশোধ করতে হবে। নিয়মিত গ্রাহকদের জন্য ক্রেডিট সুবিধা আছে।</p>
+            </div>
+          </div>
+
+          <!-- Delivery FAQ -->
+          <div class="faq-item" data-category="delivery" id="delivery">
+            <div class="faq-question">
+              <h3>ডেলিভারি সেবা আছে কি?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>হ্যাঁ, আমাদের ডেলিভারি সেবা আছে। স্থানীয় এলাকায় ফ্রি ডেলিভারি। দূরের জন্য পরিবহন খরচ আলাদা। বড় অর্ডারের জন্য ডেলিভারি চার্জে ছাড় পাবেন। ডেলিভারির সময় আগে থেকেই জানিয়ে দেওয়া হয়।</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="delivery">
+            <div class="faq-question">
+              <h3>ডেলিভারি কত সময় লাগে?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>স্থানীয় এলাকায় সাধারণত ২৪ ঘন্টার মধ্যে ডেলিভারি হয়। দূরের জেলায় ২-৩ দিন সময় লাগতে পারে। জরুরি ডেলিভারির জন্য অতিরিক্ত চার্জ প্রযোজ্য। আবহাওয়া খারাপ থাকলে ডেলিভারি দেরি হতে পারে।</p>
+            </div>
+          </div>
+
+          <!-- General FAQ -->
+          <div class="faq-item" data-category="all">
+            <div class="faq-question">
+              <h3>চালের মান কিভাবে নিশ্চিত করা হয়?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>আমরা প্রতিটি ধাপে কঠোর মান নিয়ন্ত্রণ করি। ধান নির্বাচন থেকে শুরু করে প্যাকেজিং পর্যন্ত সব কিছু যত্নসহকারে করা হয়। অভিজ্ঞ কর্মীরা হাতে চাল ছাঁটেন। প্রতিটি ব্যাচ পরীক্ষা করে তবেই বাজারে পাঠানো হয়।</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="all">
+            <div class="faq-question">
+              <h3>কারখানা দেখতে যেতে পারি?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>অবশ্যই! আমরা গ্রাহকদের কারখানা দেখতে উৎসাহিত করি। আগে থেকে ফোন করে আসলে আমরা আপনাকে পুরো প্রক্রিয়া দেখাতে পারব। কাজের সময় (সকাল ৮টা - সন্ধ্যা ৬টা) আসলে সব কিছু চালু অবস্থায় দেখতে পাবেন।</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="all">
+            <div class="faq-question">
+              <h3>রিটার্ন পলিসি কী?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>যদি পণ্যে কোনো সমস্যা থাকে তাহলে ২৪ ঘন্টার মধ্যে জানান। আমরা পণ্য পরীক্ষা করে দেখব। সমস্যা আমাদের দিক থেকে হলে সম্পূর্ণ রিফান্ড বা রিপ্লেসমেন্ট দেব। গ্রাহক সন্তুষ্টিই আমাদের প্রথম অগ্রাধিকার।</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Still Have Questions -->
+    <section class="section contact-section">
+      <div class="container">
+        <div class="contact-cta">
+          <h2>এখনও প্রশ্ন আছে?</h2>
+          <p>আমাদের সাথে সরাসরি যোগাযোগ করুন। আমরা আপনার সব প্রশ্নের উত্তর দিতে প্রস্তুত।</p>
+          <div class="contact-buttons">
+            <a href="/contact" class="btn">যোগাযোগ করুন</a>
+            <a href="tel:+8801XXXXXXXXX" class="btn btn-secondary">📞 ফোন করুন</a>
+            <a href="https://wa.me/8801XXXXXXXXX" target="_blank" class="btn">💬 হোয়াটসঅ্যাপ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .main-content {
+    padding-top: 80px;
+  }
+
+  .page-hero {
+    background: linear-gradient(135deg, #16A34A, #22C55E);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .page-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+
+  .faq-categories {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .category-btn {
+    padding: 0.75rem 1.5rem;
+    background: white;
+    border: 2px solid #16A34A;
+    color: #16A34A;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .category-btn:hover,
+  .category-btn.active {
+    background: #16A34A;
+    color: white;
+  }
+
+  .faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .faq-item {
+    background: white;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .faq-item.hidden {
+    display: none;
+  }
+
+  .faq-item:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    border-bottom: 1px solid #F3F4F6;
+  }
+
+  .faq-question h3 {
+    color: #16A34A;
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  .faq-toggle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #16A34A;
+    transition: transform 0.3s ease;
+  }
+
+  .faq-item.active .faq-toggle {
+    transform: rotate(45deg);
+  }
+
+  .faq-answer {
+    padding: 0 2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .faq-item.active .faq-answer {
+    padding: 0 2rem 1.5rem;
+    max-height: 200px;
+  }
+
+  .faq-answer p {
+    color: #4B5563;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .contact-section {
+    background: #F9FAFB;
+  }
+
+  .contact-cta {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .contact-cta h2 {
+    color: #16A34A;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .contact-cta p {
+    margin-bottom: 2rem;
+    color: #6B7280;
+    font-size: 1.1rem;
+  }
+
+  .contact-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 768px) {
+    .page-hero h1 {
+      font-size: 2rem;
+    }
+
+    .faq-categories {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .faq-question {
+      padding: 1rem 1.5rem;
+    }
+
+    .faq-item.active .faq-answer {
+      padding: 0 1.5rem 1rem;
+    }
+
+    .contact-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact-cta h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const categoryBtns = document.querySelectorAll('.category-btn');
+    const faqItems = document.querySelectorAll('.faq-item');
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    // Category filtering
+    categoryBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const category = this.getAttribute('data-category');
+        
+        // Update active button
+        categoryBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Filter FAQ items
+        faqItems.forEach(item => {
+          const itemCategory = item.getAttribute('data-category');
+          if (category === 'all' || itemCategory === category || itemCategory === 'all') {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // FAQ toggle functionality
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', function() {
+        const faqItem = this.parentElement;
+        const isActive = faqItem.classList.contains('active');
+        
+        // Close all other FAQ items
+        faqItems.forEach(item => {
+          item.classList.remove('active');
+        });
+        
+        // Toggle current item
+        if (!isActive) {
+          faqItem.classList.add('active');
+        }
+      });
+    });
+
+    // Handle direct links to FAQ items
+    const hash = window.location.hash;
+    if (hash) {
+      const targetItem = document.querySelector(hash);
+      if (targetItem && targetItem.classList.contains('faq-item')) {
+        setTimeout(() => {
+          targetItem.classList.add('active');
+          targetItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 500);
+      }
+    }
+  });
+</script>

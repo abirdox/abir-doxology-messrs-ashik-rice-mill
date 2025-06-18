@@ -1,0 +1,464 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="যোগাযোগ - মেসার্স আশিক রাইস মিল">
+  <Header />
+  
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>যোগাযোগ করুন</h1>
+        <p>আমাদের সাথে সরাসরি যোগাযোগ করুন</p>
+      </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>যোগাযোগের তথ্য</h2>
+            <div class="contact-cards">
+              <div class="contact-card card">
+                <div class="contact-icon">📍</div>
+                <h3>ঠিকানা</h3>
+                <p>গ্রাম: [গ্রামের নাম]<br>
+                উপজেলা: [উপজেলার নাম]<br>
+                জেলা: [জেলার নাম]<br>
+                বাংলাদেশ</p>
+              </div>
+
+              <div class="contact-card card">
+                <div class="contact-icon">📞</div>
+                <h3>ফোন নম্বর</h3>
+                <p>মোবাইল: +৮৮০ ১৭XX XXX XXX<br>
+                অফিস: +৮৮০ ১৮XX XXX XXX<br>
+                হোয়াটসঅ্যাপ: +৮৮০ ১৯XX XXX XXX</p>
+              </div>
+
+              <div class="contact-card card">
+                <div class="contact-icon">✉️</div>
+                <h3>ইমেইল</h3>
+                <p>info@ashikricemill.com<br>
+                orders@ashikricemill.com<br>
+                support@ashikricemill.com</p>
+              </div>
+
+              <div class="contact-card card">
+                <div class="contact-icon">🕒</div>
+                <h3>কার্যসময়</h3>
+                <p>সোমবার - শুক্রবার: ৮:০০ - ১৮:০০<br>
+                শনিবার: ৮:০০ - ১৪:০০<br>
+                রবিবার: বন্ধ</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-section">
+            <h2>আমাদের বার্তা পাঠান</h2>
+            <form class="contact-form card" id="contactForm">
+              <div class="form-group">
+                <label for="name">নাম *</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">ফোন নম্বর *</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">ইমেইল</label>
+                <input type="email" id="email" name="email">
+              </div>
+
+              <div class="form-group">
+                <label for="subject">বিষয় *</label>
+                <select id="subject" name="subject" required>
+                  <option value="">বিষয় নির্বাচন করুন</option>
+                  <option value="rice-order">চাল অর্ডার</option>
+                  <option value="paddy-supply">ধান সরবরাহ</option>
+                  <option value="rental">ভাড়া সেবা</option>
+                  <option value="wholesale">পাইকারি ক্রয়</option>
+                  <option value="general">সাধারণ জিজ্ঞাসা</option>
+                  <option value="other">অন্যান্য</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="quantity">পরিমাণ (যদি প্রযোজ্য হয়)</label>
+                <input type="text" id="quantity" name="quantity" placeholder="যেমন: ১০ মণ, ৫০ কেজি">
+              </div>
+
+              <div class="form-group">
+                <label for="message">বার্তা *</label>
+                <textarea id="message" name="message" rows="5" required placeholder="আপনার প্রয়োজন বিস্তারিত লিখুন..."></textarea>
+              </div>
+
+              <button type="submit" class="btn submit-btn">বার্তা পাঠান</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section map-section">
+      <div class="container">
+        <h2 class="section-title">আমাদের অবস্থান</h2>
+        <div class="map-container">
+          <div class="map-placeholder">
+            <div class="map-content">
+              <h3>🗺️ গুগল ম্যাপ</h3>
+              <p>আমাদের সঠিক অবস্থান দেখতে নিচের বাটনে ক্লিক করুন</p>
+              <a href="https://maps.google.com" target="_blank" class="btn">গুগল ম্যাপে দেখুন</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="location-details">
+          <div class="location-info">
+            <h3>কিভাবে আসবেন</h3>
+            <div class="directions">
+              <div class="direction-item">
+                <h4>🚌 বাস যোগে</h4>
+                <p>[নিকটতম বাস স্ট্যান্ড] থেকে [দূরত্ব] কিলোমিটার। স্থানীয় পরিবহন পাওয়া যায়।</p>
+              </div>
+              
+              <div class="direction-item">
+                <h4>🚗 গাড়ি যোগে</h4>
+                <p>[প্রধান সড়ক] থেকে [দিক নির্দেশনা]। পার্কিং সুবিধা উপলব্ধ।</p>
+              </div>
+              
+              <div class="direction-item">
+                <h4>🛵 রিকশা/সিএনজি</h4>
+                <p>[নিকটতম পয়েন্ট] থেকে সরাসরি রিকশা বা সিএনজি পাওয়া যায়।</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Contact -->
+    <section class="section quick-contact-section">
+      <div class="container">
+        <h2 class="section-title">দ্রুত যোগাযোগ</h2>
+        <div class="quick-contact-grid">
+          <div class="quick-contact-card card">
+            <div class="quick-icon">📞</div>
+            <h3>ফোন করুন</h3>
+            <p>তাৎক্ষণিক সহায়তার জন্য</p>
+            <a href="tel:+8801XXXXXXXXX" class="btn">এখনই কল করুন</a>
+          </div>
+
+          <div class="quick-contact-card card">
+            <div class="quick-icon">💬</div>
+            <h3>হোয়াটসঅ্যাপ</h3>
+            <p>দ্রুত মেসেজ এবং অর্ডারের জন্য</p>
+            <a href="https://wa.me/8801XXXXXXXXX" target="_blank" class="btn btn-secondary">হোয়াটসঅ্যাপে মেসেজ</a>
+          </div>
+
+          <div class="quick-contact-card card">
+            <div class="quick-icon">📧</div>
+            <h3>ইমেইল করুন</h3>
+            <p>বিস্তারিত জিজ্ঞাসার জন্য</p>
+            <a href="mailto:info@ashikricemill.com" class="btn">ইমেইল পাঠান</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Quick Links -->
+    <section class="section faq-links-section">
+      <div class="container">
+        <h2 class="section-title">সাধারণ প্রশ্ন</h2>
+        <div class="faq-quick-links">
+          <a href="/faq#small-quantity" class="faq-link">ছোট পরিমাণে চাল কিনতে পারি?</a>
+          <a href="/faq#raw-rice" class="faq-link">কাঁচা চাল পাওয়া যায়?</a>
+          <a href="/faq#rental" class="faq-link">ফ্যাক্টরি ভাড়া নেওয়া যায়?</a>
+          <a href="/faq#wholesale" class="faq-link">পাইকারি দামে পার্থক্য কত?</a>
+          <a href="/faq#delivery" class="faq-link">ডেলিভারি সেবা আছে?</a>
+        </div>
+        <div class="faq-cta">
+          <p>আরও প্রশ্ন আছে?</p>
+          <a href="/faq" class="btn">সব প্রশ্ন দেখুন</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .main-content {
+    padding-top: 80px;
+  }
+
+  .page-hero {
+    background: linear-gradient(135deg, #16A34A, #22C55E);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .page-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .contact-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact-card {
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .contact-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-card h3 {
+    color: #16A34A;
+    margin-bottom: 1rem;
+  }
+
+  .contact-card p {
+    line-height: 1.6;
+    color: #4B5563;
+  }
+
+  .contact-form-section h2 {
+    color: #16A34A;
+    margin-bottom: 2rem;
+  }
+
+  .contact-form {
+    padding: 2rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #374151;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #E5E7EB;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #16A34A;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .map-section {
+    background: #F9FAFB;
+  }
+
+  .map-container {
+    margin-bottom: 3rem;
+  }
+
+  .map-placeholder {
+    height: 400px;
+    background: #E5E7EB;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .map-content h3 {
+    color: #16A34A;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .location-details {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .location-info h3 {
+    color: #16A34A;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .directions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .direction-item {
+    text-align: center;
+  }
+
+  .direction-item h4 {
+    color: #16A34A;
+    margin-bottom: 1rem;
+  }
+
+  .quick-contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .quick-contact-card {
+    text-align: center;
+  }
+
+  .quick-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .quick-contact-card h3 {
+    color: #16A34A;
+    margin-bottom: 1rem;
+  }
+
+  .faq-links-section {
+    background: #F9FAFB;
+  }
+
+  .faq-quick-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .faq-link {
+    display: block;
+    padding: 1rem;
+    background: white;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: #374151;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .faq-link:hover {
+    color: #16A34A;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(22, 163, 74, 0.1);
+  }
+
+  .faq-cta {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #E5E7EB;
+  }
+
+  .faq-cta p {
+    margin-bottom: 1rem;
+    color: #6B7280;
+  }
+
+  @media (max-width: 768px) {
+    .page-hero h1 {
+      font-size: 2rem;
+    }
+
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .contact-cards {
+      grid-template-columns: 1fr;
+    }
+
+    .directions {
+      grid-template-columns: 1fr;
+    }
+
+    .quick-contact-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .faq-quick-links {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(this);
+        const data = Object.fromEntries(formData);
+        
+        // Simple validation
+        if (!data.name || !data.phone || !data.subject || !data.message) {
+          alert('অনুগ্রহ করে সব প্রয়োজনীয় ক্ষেত্র পূরণ করুন।');
+          return;
+        }
+        
+        // Here you would typically send the data to a server
+        // For now, we'll just show a success message
+        alert('আপনার বার্তা পাঠানো হয়েছে! আমরা শীঘ্রই আপনার সাথে যোগাযোগ করব।');
+        
+        // Reset form
+        this.reset();
+      });
+    }
+  });
+</script>
