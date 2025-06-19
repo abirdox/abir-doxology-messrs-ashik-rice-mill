@@ -97,7 +97,13 @@ import Footer from '../components/Footer.astro';
                 <textarea id="message" name="message" rows="5" required placeholder="আপনার প্রয়োজন বিস্তারিত লিখুন..."></textarea>
               </div>
 
-              <button type="submit" class="btn submit-btn">বার্তা পাঠান</button>
+              <!-- <button type="submit" class="btn submit-btn" disabled>বার্তা পাঠান</button> -->
+              <button class="disabled-btn" disabled>বার্তা পাঠান</button>
+
+              <div style={{margin: "10px", marginLeft:"0px"}}>
+
+              <span style={{color: "red"}}>আপাদত সরাসরি ফোন বা হোয়াটসঅ্যাপে যোগাযোগ করুন।</span>
+              </div>
             </form>
           </div>
         </div>
@@ -178,7 +184,7 @@ import Footer from '../components/Footer.astro';
         <h2 class="section-title">সাধারণ প্রশ্ন</h2>
         <div class="faq-quick-links">
           <a href="/faq#small-quantity" class="faq-link">ছোট পরিমাণে চাল কিনতে পারি?</a>
-          <a href="/faq#raw-rice" class="faq-link">খুচরা চাল পাওয়া যায়?</a>
+          <a href="/faq#raw-rice" class="faq-link">কী কী ধরনের চাল পাওয়া যায়?</a>
           <a href="/faq#rental" class="faq-link">চাল কল বা ধান শুকানোর মাঠ ভাড়া নেওয়া যায়?</a>
           <a href="/faq#wholesale" class="faq-link">পাইকারি দামে পার্থক্য কত?</a>
           <a href="/faq#delivery" class="faq-link">ডেলিভারি সেবা আছে?</a>
@@ -291,6 +297,16 @@ import Footer from '../components/Footer.astro';
     width: 100%;
     padding: 1rem;
     font-size: 1.1rem;
+    background-color: #374151;
+  }
+
+  .disabled-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background-color: #9c9c9c;
+    color: white;
   }
 
   .map-section {
