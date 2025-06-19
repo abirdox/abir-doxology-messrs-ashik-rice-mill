@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import main_owner from '../assets/images/owner.png';
+import owner from '../assets/images/owner.jpg';
 ---
 
 <Layout title="আমাদের সম্পর্কে - মেসার্স আশিক রাইস মিল">
@@ -105,17 +107,39 @@ import Footer from '../components/Footer.astro';
       <div class="container">
         <div class="owner-content">
           <div class="owner-image">
-            <img src="https://img.freepik.com/free-photo/close-up-photo-young-successful-business-man-black-suit_171337-9509.jpg?semt=ais_hybrid&w=740" alt="Owner">
+            <!-- <img src="https://img.freepik.com/free-photo/close-up-photo-young-successful-business-man-black-suit_171337-9509.jpg?semt=ais_hybrid&w=740" alt="Owner"> -->
+            <img src={main_owner.src} alt="Owner">
           </div>
           <div class="owner-text">
-            <h2>মালিকের বার্তা</h2>
-            <p>"আমাদের পরিবারের ঐতিহ্য অনুসরণ করে আমরা আজও সর্বোচ্চ মানের চাল উৎপাদন করে চলেছি। প্রতিটি গ্রাহকের সন্তুষ্টিই আমাদের সাফল্যের চাবিকাঠি।"</p>
+            <h2>প্রতিষ্ঠাতা মালিকের বার্তা</h2>
+            <p>"আশিক রাইস মিল শুরু করেছিলাম একটি সহজ স্বপ্ন নিয়ে—মানসম্মত চাল মানুষের দোরগোড়ায় পৌঁছে দেওয়া। আমরা মাঠে শুকানো ধান হতে চালের ঐতিহ্যকে ধরে রেখেছি। "</p>
             
             <p>"আমরা বিশ্বাস করি যে, ভালো খাবারই ভালো স্বাস্থ্যের ভিত্তি। তাই আমরা প্রতিদিন কাজ করি যেন আপনার পরিবারের খাবারের টেবিলে পৌঁছায় সর্বোত্তম চাল।"</p>
             
             <div class="owner-signature">
-              <p><strong>মোহাম্মদ আশিক</strong></p>
-              <p>প্রতিষ্ঠাতা ও মালিক</p>
+              <p><strong>মোঃ আব্দুর রাজ্জাক</strong></p>
+              <p>প্রতিষ্ঠাতা</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section owner-section">
+      <div class="container">
+        <div class="owner-content">
+          <div class="owner-image">
+            <!-- <img src="https://img.freepik.com/free-photo/close-up-photo-young-successful-business-man-black-suit_171337-9509.jpg?semt=ais_hybrid&w=740" alt="Owner"> -->
+            <img src={owner.src} alt="Owner">
+          </div>
+          <div class="owner-text">
+            <h2>বর্তমান পরিচালক ও মালিকের বার্তা</h2>
+            <p>"আমাদের পরিবারের ঐতিহ্য অনুসরণ করে আমরা আজও সর্বোচ্চ মানের চাল উৎপাদন করে চলেছি। প্রতিটি গ্রাহকের সন্তুষ্টিই আমাদের সাফল্যের চাবিকাঠি।"</p>
+            
+            <p>"আমার পিতার স্বপ্ন, সততা এবং শ্রম আজ আমাদের গর্বের প্রতিষ্ঠান ‘আশিক রাইস মিল’-এ পরিণত হয়েছে। আমি তাঁর পথ অনুসরণ করে, আধুনিকতা ও ঐতিহ্যের সমন্বয়ে এই মিল পরিচালনার চেষ্টা করছি। আমরা কেবল চাল বিক্রি করি না—আমরা গ্রাহকের আস্থা, স্বাস্থ্য ও সন্তুষ্টির প্রতিশ্রুতি দিই।"</p>
+            
+            <div class="owner-signature">
+              <p><strong>মোঃ আবির হোসেন আশিক</strong></p>
+              <p>বর্তমান পরিচালক ও মালিক</p>
             </div>
           </div>
         </div>
