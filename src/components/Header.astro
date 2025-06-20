@@ -15,12 +15,12 @@ const currentPath = Astro.url.pathname;
         
         <div class="nav-menu" id="nav-menu">
           <a href="/" class={currentPath === '/' ? 'nav-link active' : 'nav-link'}>হোম</a>
-          <a href="/about" class={currentPath === '/about' ? 'nav-link active' : 'nav-link'}>আমাদের সম্পর্কে</a>
-          <a href="/products" class={currentPath === '/products' ? 'nav-link active' : 'nav-link'}>পণ্য ও সেবা</a>
-          <a href="/why-choose-us" class={currentPath === '/why-choose-us' ? 'nav-link active' : 'nav-link'}>কেন আমাদের</a>
-          <a href="/gallery" class={currentPath === '/gallery' ? 'nav-link active' : 'nav-link'}>গ্যালারি</a>
-          <a href="/contact" class={currentPath === '/contact' ? 'nav-link active' : 'nav-link'}>যোগাযোগ</a>
-          <a href="/faq" class={currentPath === '/faq' ? 'nav-link active' : 'nav-link'}>প্রশ্ন ও উত্তর</a>
+          <a href="/about" class={currentPath.includes('about') ? 'nav-link active' : 'nav-link'}>আমাদের সম্পর্কে</a>
+          <a href="/products" class={currentPath.includes('products') ? 'nav-link active' : 'nav-link'}>পণ্য ও সেবা</a>
+          <a href="/why-choose-us" class={currentPath.includes('why-choose-us') ? 'nav-link active' : 'nav-link'}>কেন আমাদের</a>
+          <a href="/gallery" class={currentPath.includes('gallery') ? 'nav-link active' : 'nav-link'}>গ্যালারি</a>
+          <a href="/contact" class={currentPath.includes('contact') ? 'nav-link active' : 'nav-link'}>যোগাযোগ</a>
+          <a href="/faq" class={currentPath.includes('faq') ? 'nav-link active' : 'nav-link'}>প্রশ্ন ও উত্তর</a>
         </div>
 
         <div class="nav-toggle" id="nav-toggle">
